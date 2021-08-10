@@ -1,0 +1,10 @@
+hazelcast:
+  cluster-name: boot-hazelcast-cluster
+  network:
+    join:
+      multicast:
+        enabled: false
+      kubernetes:
+        enabled: true
+        namespace: default
+        service-name: hazelcast-boot-service
